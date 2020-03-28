@@ -91,7 +91,7 @@ input:focus {
   display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
   .logo {
     height: 20px;
     margin: 31px auto 30px 28px;

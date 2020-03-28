@@ -4,6 +4,7 @@ body {
   font-size: 16px;
   display: flex;
   flex-direction: row;
+  background: url(images/svg-files/bg-pattern-desktop.svg);
 }
 
 .logo {
@@ -55,10 +56,9 @@ input:focus {
 }
 
 .img-submit {
-  /* margin-top: 10px; */
   position: absolute;
   left: 448px;
-  top: 604px;
+  top: 588px;
   border-radius: 30px;
   height: 20px;
   padding: 19px 50px;
@@ -69,11 +69,15 @@ input:focus {
   color: hsl(0, 36%, 70%);
 }
 
-.err-img {
+.err-img-on {
   height: 30px;
   position: relative;
   right: 150px;
   top: 10px;
+}
+
+.err-img-off {
+  display: none;
 }
 
 #last-statement{
@@ -83,11 +87,10 @@ input:focus {
   left: 200px;
 }
 
-/* #image{
-  background-image: url("images/hero-desktop.jpg");
-  height: 800px;
-  width: 1100px;
-} */
+.mobile-img{
+  display: none;
+}
+
 @media (max-width: 375px) {
   .logo {
     height: 20px;
@@ -145,5 +148,13 @@ input:focus {
     position: absolute;
     left: 50px;
     top: 750px;
+  }
+
+  .desktop-img{
+    display: none;
+  }
+
+  .mobile-img{
+    display: inline;
   }
 }

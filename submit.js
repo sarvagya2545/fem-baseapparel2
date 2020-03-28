@@ -1,12 +1,19 @@
 document.getElementsByClassName("img-submit")[0].addEventListener("click", function(event) {
+
   event.preventDefault();
+
   var emailInput = document.querySelector(".form-email").value;
+  var element = document.getElementById("err");
   if (!(verifyEmail(emailInput))) {
-    document.getElementById("err").src = "images/icon-error.png";
+
+    element.classList.remove("err-img-off");
+    element.classList.add("err-img-on");
     document.getElementById("last-statement").innerHTML="Please provide a valid email.";
   } else {
-    document.getElementById("err").src = "";
-    document.getElementById("last-statement").innerHTML="Thanks for submitting.";    
+
+    element.classList.remove("err-img-on");
+    element.classList.add("err-img-off");
+    document.getElementById("last-statement").innerHTML="Thanks for submitting.";
   }
 });
 

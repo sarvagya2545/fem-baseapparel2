@@ -30,7 +30,7 @@
 
     <picture>
       <source srcset="images/hero-mobile.jpg" media="(max-width: 375px)">
-      <img>
+      <img class="mobile-img" alt="mobile-hero-img">
     </picture>
 
     <div class="main-content">
@@ -46,8 +46,8 @@
         onfocus="this.placeholder = '' "
         onblur = "this.placeholder= 'Email Address'"
         >
-        <img id = "err" src="" class= "err-img">
-        <input class="img-submit" type="image" src="images/icon-arrow.png">
+        <img id = "err" src="images/icon-error.png" alt="error-image" class= "err-img-off">
+        <input class="img-submit" type="image" src="images/icon-arrow.png" alt="submit-arrow">
       </form>
       <h3 id = "last-statement"></h3>
     </div>
@@ -56,7 +56,7 @@
   <section id="image">
     <picture>
       <source media="(min-width: 376px)" srcset="images/hero-desktop.jpg">
-      <img class="img">
+      <img class="img" alt="desktop-img">
     </picture>
   </section>
 

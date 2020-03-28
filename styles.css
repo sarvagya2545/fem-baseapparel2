@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  height: 35px;
+  margin: 60px 160px 70px;
+}
+
+.title {
+  font-size: 65px;
+  padding-right: 90px;
+  margin-bottom: 44px;
+  letter-spacing: 20px;
+}
+
+.title-text {
+  padding-right: 80px;
+  line-height: 25px;
+  color: #ce9797;
+}
+
+span {
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.main-content {
+  margin: 60px 160px;
+}
+
+.form {
+  padding-top: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form-email {
+  padding: 4% 4%;
+  border-radius: 30px;
+  margin-top: 45px;
+  width: 70%;
+  font-size: 16px;
+  color: #ce9797;
+  font-family: inherit;
+  border: solid 1px #ce9797;
+  background: inherit;
+}
+
+.img-submit {
+  /* margin-top: 10px; */
+  position: absolute;
+  left: 448px;
+  top: 604px;
+  border-radius: 30px;
+  height: 20px;
+  padding: 19px 50px;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+
+::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.err-img {
+  height: 30px;
+  position: relative;
+  right: 150px;
+  top: 10px;
+}
+
+#last-statement{
+  font-size: 16px;
+  color: #ce9797;
+  position: absolute;
+  left: 200px;
+}
+
+/* #image{
+  background-image: url("images/hero-desktop.jpg");
+  height: 800px;
+  width: 1100px;
+} */
+@media (max-width: 375px) {
+  .logo {
+    height: 20px;
+    margin: 31px auto 30px 28px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 15px;
+    margin-bottom: 27px;
+    padding: 0;
+  }
+
+  .main-content {
+    margin-top: 67px;
+    margin-left: 63px;
+    margin-right: 50px;
+  }
+
+  .title-text {
+    text-align: center;
+    font-size: 16px;
+    padding: 0;
+    width: 135%;
+    position: relative;
+    right: 50px;
+  }
+
+  .form-email {
+    padding: 12px 4%;
+    width: 120%;
+    position: relative;
+    right: 50px;
+  }
+
+  .img-submit {
+    padding: 10px 30px;
+    position: relative;
+    top: -42px;
+    left: 218px;
+    height: 22px;
+  }
+
+  .err-img {
+    height: 30px;
+    position: absolute;
+    top: 704px;
+    left: 240px;
+  }
+
+  #last-statement{
+    font-size: 16px;
+    color: #ce9797;
+    position: absolute;
+    left: 50px;
+    top: 750px;
+  }
+}

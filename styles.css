@@ -66,7 +66,7 @@ input:focus {
 }
 
 ::placeholder {
-  color: hsl(0, 36%, 70%);
+  color: hsla(0, 36%, 70%,0.5);
 }
 
 .err-img-on {
